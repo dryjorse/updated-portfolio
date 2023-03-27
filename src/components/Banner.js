@@ -47,6 +47,9 @@ export const Banner = () => {
     }
   }
 
+  let date = new Date()
+  const age = date.getFullYear() - 2007
+
   return (
     <section className="banner" id="home">
       <Container>
@@ -56,8 +59,8 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Abdulazim`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Front-end Developer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>I'm from Kyrgyzstan and I'm interested in website development (front-end). I took a front-end developer course at GeekTech. I have a year of work experience and am always happy to work on excellent projects with wonderful people! </p>
+                <h1>{`Hi! I'm Abdulazim`} <br/> <span className="wrap">{text}</span></h1>
+                  <p>I'm from Kyrgyzstan and I'm interested in website development (front-end). I am {age} years old and i've took a front-end developer course at GeekTech. I have a year of work experience and am always happy to work on excellent projects with wonderful people! </p>
                   <a href="#connect">Let’s Connect <ArrowRightCircle size={25} /></a>
               </div>}
             </TrackVisibility>

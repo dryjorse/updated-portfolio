@@ -3,10 +3,10 @@ import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
 import meter4 from "../assets/img/meter4.svg";
 import meter5 from "../assets/img/meter5.svg";
+import meter6 from "../assets/img/meter6.png";
+import meter7 from "../assets/img/meter7.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
 
 export const Skills = () => {
@@ -44,20 +44,40 @@ export const Skills = () => {
                                 <h5 className="skillTitle">HTML</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
+                                <div>
+                                  <img src={meter2} alt="Image" />
+                                </div>
                                 <h5 className="skillTitle">CSS</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
+                                <div>
+                                  <img src={meter3} alt="Image" />
+                                </div>
                                 <h5 className="skillTitle">JS</h5>
                             </div>
                             <div className="item">
-                                <img src={meter4} alt="Image" />
+                                <div>
+                                  <img src={meter4} alt="Image" />
+                                </div>
                                 <h5 className="skillTitle">React</h5>
                             </div>
                             <div className="item">
-                                <img src={meter5} alt="Image" />
+                                <div>
+                                  <img src={meter5} alt="Image" />
+                                </div>
                                 <h5 className="skillTitle">Redux</h5>
+                            </div>
+                            <div className="item">
+                                <div>
+                                  <img src={meter6} alt="Image" />
+                                </div>
+                                <h5 className="skillTitle">Node JS & Express</h5>
+                            </div>
+                            <div className="item">
+                                <div>
+                                  <img src={meter7} alt="Image" />
+                                </div>
+                                <h5 className="skillTitle">Type Script</h5>
                             </div>
                         </Carousel>
                     </div>
